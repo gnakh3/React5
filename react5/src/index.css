@@ -165,7 +165,7 @@ body {
   font-weight: 500;
   font-style: Medium;
   font-size: 18px;
-   padding-left: 16px;
+  padding-left: 16px;
   padding-right: 16px;
 }
 
@@ -180,7 +180,7 @@ body {
   font-size: 18px;
   height: 45px;
   width: 191px;
-   padding-left: 16px;
+  padding-left: 16px;
   padding-right: 16px;
 }
 
@@ -220,4 +220,34 @@ button {
   font-style: Medium;
   font-size: 18px;
   color: white;
+}
+
+.errorDesign {
+  font-size: 12px;
+  color: red;
+  margin-top: 8px;
+}
+
+.afterSubmit {
+  height: 291px;
+  width: 381px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thankSubmit {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 3.42px;
+  text-align: center;
+  color: #21092F;
+}
+
+.opacitySubmit {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8F8694;
 }
