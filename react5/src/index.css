@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 
+
 body {
   height: 100vh;
   width: 100vw;
   font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
 }
 
 .main {
@@ -220,6 +222,7 @@ button {
   font-style: Medium;
   font-size: 18px;
   color: white;
+   transition: all 0.3s ease;
 }
 
 .errorDesign {
@@ -250,4 +253,183 @@ button {
   font-weight: 500;
   font-size: 18px;
   color: #8F8694;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+.respcircle {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    }
+
+  .main {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .background {
+    width: 100vw;
+    height: 30vh;
+    top: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 527px;
+    width: 100%;
+    max-width: 541px;
+    padding-top: 32px;
+  }
+
+  .frontCard {
+    position: absolute;
+    z-index: 100;
+    top: 182px;
+    max-width: 100%;
+  }
+
+  .input {
+    height: 472px;
+    display: flex;
+    padding-bottom: 32px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .cards {
+    height: 251px;
+    width: 343px;
+    padding-top: 16px;
+  }
+
+  .frontCard {
+    position: absolute;
+    height: 156px;
+    width: 285px;
+    padding-left: 19px;
+    top: 160px;
+  }
+
+  .cardNumber {
+  height: 23px;
+  width: 293px;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+  padding-top: 10px;
+}
+
+.cardName {
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
+
+.month,
+.year,
+.cvc {
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
+
+.cardFooter {
+  width: 240px;
+}
+
+.circles {
+  display: none;
+}
+
+.respcircle {
+  display: flex;
+}
+
+.backCard {
+  height: 156px;
+  width: 285px;
+}
+
+.backHeader {
+  width: 286px;
+  height: 34px;
+  background-color: #2F2F2F;
+}
+
+.cvc {
+  width: 230px;
+  height: 29px;
+}
+
+
+.input {
+  width: 327px;
+  height: 388px;
+}
+
+.footerInput {
+  width: 327px;
+}
+
+.expDate {
+  gap: 8px;
+}
+
+.expInput {
+  width: 72px;
+}
+
+.cvcInput {
+  width: 164px;
+}
+
+.nameInput,
+.numberInput {
+  width: 327px;
+}
+
+
+
+button {
+  width: 327px;
+  height: 53px;
+}
+
+.afterSubmit {
+  height: 291px;
+  width: 381px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thankSubmit {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 3.42px;
+  text-align: center;
+  color: #21092F;
+}
+
+.opacitySubmit {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8F8694;
+}
+
 }
