@@ -74,6 +74,7 @@ const Source = () => {
   };
 
   return (
+    <div className='Parent'>
     <div className='main'>
       <div className='background'></div>
 
@@ -165,6 +166,7 @@ const Source = () => {
         </div>
       )}
     </div>
+  </div>
   );
 };
 
